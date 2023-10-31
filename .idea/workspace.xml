@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3b9cdfe7-5e30-491b-a900-45192f01d891" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FlaskConsoleOptions" custom-start-script="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))">
+    <envs>
+      <env key="FLASK_APP" value="app" />
+    </envs>
+    <option name="myCustomStartScript" value="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))" />
+    <option name="myEnvs">
+      <map>
+        <entry key="FLASK_APP" value="app" />
+      </map>
+    </option>
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="ProjectId" id="1zfrnsQ2jnuxFh4qP239dimDCIb" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
+    <property name="credentialsType com.jetbrains.python.remote.PyCreateRemoteInterpreterDialog$PyCreateRemoteSdkForm" value="Web Deployment" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../torch-cam-main" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="PyDebuggerOptionsProvider">
+    <option name="mySupportGeventDebugging" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\changzb\sapace\LZU_WORK_SPACE\Cross-attention-fss\models" />
+      <recent name="D:\changzb\sapace\LZU_WORK_SPACE\Cycle_Cross_Guided\util" />
+      <recent name="D:\changzb\sapace\LZU_WORK_SPACE\Cycle_Cross_Guided" />
+      <recent name="D:\changzb\sapace\LZU_WORK_SPACE\Cycle_Cross_Guided\models" />
+      <recent name="D:\changzb\sapace\LZU_WORK_SPACE\Cycle_Cross_Guided\runs" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.train">
+    <configuration name="config" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Cycle_Cross_Guided" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/config.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="cross_attention" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Cycle_Cross_Guided" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/models" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/models/cross_attention.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="fewshot" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Cycle_Cross_Guided" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/models" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="D:\changzb\sapace\LZU_WORK_SPACE\Cross-attention-fss\models\fewshot.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Cross-attention-fss" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="train" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Cross-attention-fss" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="D:\changzb\software\Anaconda3\envs\pytorchStudy\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/train.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.train" />
+        <item itemvalue="Python.test" />
+        <item itemvalue="Python.config" />
+        <item itemvalue="Python.cross_attention" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3b9cdfe7-5e30-491b-a900-45192f01d891" name="Default Changelist" comment="" />
+      <created>1633693776259</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1633693776259</updated>
+      <workItem from="1633693778143" duration="131002000" />
+      <workItem from="1634448031342" duration="31082000" />
+      <workItem from="1634548041261" duration="1401000" />
+      <workItem from="1634550187053" duration="171000" />
+      <workItem from="1634550393268" duration="23184000" />
+      <workItem from="1634612031040" duration="5850000" />
+      <workItem from="1634633813768" duration="41000" />
+      <workItem from="1634636393086" duration="21476000" />
+      <workItem from="1634722073155" duration="1177000" />
+      <workItem from="1634738188149" duration="41521000" />
+      <workItem from="1635495553565" duration="10846000" />
+      <workItem from="1635648500736" duration="75285000" />
+      <workItem from="1636269771770" duration="115517000" />
+      <workItem from="1637241610581" duration="624000" />
+      <workItem from="1637248108104" duration="723000" />
+      <workItem from="1637284146362" duration="1912000" />
+      <workItem from="1637286116405" duration="1291000" />
+      <workItem from="1637289984608" duration="52000" />
+      <workItem from="1637290085605" duration="39000" />
+      <workItem from="1637290206194" duration="625000" />
+      <workItem from="1637322352767" duration="1130000" />
+      <workItem from="1637324145802" duration="1136000" />
+      <workItem from="1637325997768" duration="717000" />
+      <workItem from="1637331282200" duration="647000" />
+      <workItem from="1637388470837" duration="1356000" />
+      <workItem from="1637390548403" duration="25000" />
+      <workItem from="1637395529306" duration="5903000" />
+      <workItem from="1637403157018" duration="4361000" />
+      <workItem from="1637415630410" duration="667000" />
+      <workItem from="1637416734725" duration="145823000" />
+      <workItem from="1638506843835" duration="55714000" />
+      <workItem from="1640685432330" duration="72324000" />
+      <workItem from="1649663630239" duration="156964000" />
+      <workItem from="1656815513507" duration="8962000" />
+      <workItem from="1657089112689" duration="37705000" />
+      <workItem from="1659166576059" duration="2404000" />
+      <workItem from="1661164112330" duration="1703000" />
+      <workItem from="1662113396295" duration="1229000" />
+      <workItem from="1662429839342" duration="3412000" />
+      <workItem from="1663327650994" duration="508000" />
+      <workItem from="1667263076761" duration="61000" />
+      <workItem from="1668658311182" duration="2292000" />
+      <workItem from="1669275290754" duration="1398000" />
+      <workItem from="1669276702657" duration="27314000" />
+      <workItem from="1670376740702" duration="1692000" />
+      <workItem from="1675823187986" duration="131000" />
+      <workItem from="1676342512002" duration="32291000" />
+      <workItem from="1676529895246" duration="120000" />
+      <workItem from="1676530026474" duration="35138000" />
+      <workItem from="1680482359719" duration="3612000" />
+      <workItem from="1680512794655" duration="108000" />
+      <workItem from="1680569263702" duration="324000" />
+      <workItem from="1683771746598" duration="1098000" />
+      <workItem from="1685438937716" duration="241051000" />
+      <workItem from="1688086697727" duration="35225000" />
+      <workItem from="1689230633721" duration="2193000" />
+      <workItem from="1689293343420" duration="1920000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint suspend="THREAD" type="python-line">
+          <url>file://$USER_HOME$/AppData/Local/JetBrains/PyCharm2020.1/remote_sources/-1190714413/357733477/pretrainedmodels/models/senet.py</url>
+          <line>351</line>
+          <option name="timeStamp" value="81" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="python-line">
+          <url>file://$USER_HOME$/AppData/Local/JetBrains/PyCharm2020.1/remote_sources/-1190714413/357733477/pretrainedmodels/models/senet.py</url>
+          <line>347</line>
+          <option name="timeStamp" value="82" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="python-line">
+          <url>file://$USER_HOME$/AppData/Local/JetBrains/PyCharm2020.1/remote_sources/-1190714413/357733477/pretrainedmodels/models/senet.py</url>
+          <line>348</line>
+          <option name="timeStamp" value="83" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="python-line">
+          <url>file://$USER_HOME$/AppData/Local/JetBrains/PyCharm2020.1/remote_sources/-1190714413/357733477/pretrainedmodels/models/senet.py</url>
+          <line>349</line>
+          <option name="timeStamp" value="84" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="python-line">
+          <url>file://$USER_HOME$/AppData/Local/JetBrains/PyCharm2020.1/remote_sources/-1190714413/357733477/pretrainedmodels/models/senet.py</url>
+          <line>350</line>
+          <option name="timeStamp" value="85" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/test.py</url>
+          <line>80</line>
+          <option name="timeStamp" value="153" />
+        </line-breakpoint>
+      </breakpoints>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="support_vit_output" language="Python" />
+        <watch expression="x" />
+        <watch expression="testloader.batch_size" />
+        <watch expression="testloader" />
+        <watch expression="query" />
+        <watch expression="testloader.batch_size" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Cross_attention_fss$fewshot.coverage" NAME="fewshot Coverage Results" MODIFIED="1676432929039" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/models" />
+    <SUITE FILE_PATH="coverage/Cycle_Cross_Guided$resnet_50_101.coverage" NAME="resnet_50_101 Coverage Results" MODIFIED="1634886838899" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/models" />
+    <SUITE FILE_PATH="coverage/Cycle_Cross_Guided$train.coverage" NAME="train Coverage Results" MODIFIED="1657632214544" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Cycle_Cross_Guided$config.coverage" NAME="config Coverage Results" MODIFIED="1634887369661" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/home/czb/LZU_WORK_SPACE/Cycle_Cross_Guided" />
+    <SUITE FILE_PATH="coverage/Cross_attention_fss$test.coverage" NAME="test Coverage Results" MODIFIED="1688026375080" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Cross_attention_fss$config.coverage" NAME="config Coverage Results" MODIFIED="1676508932673" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Cyde_Cross_Guided$config.coverage" NAME="config Coverage Results" MODIFIED="1634568908645" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Cross_attention_fss$run.coverage" NAME="run Coverage Results" MODIFIED="1676429813259" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../../../software/Anaconda3/envs/pytorchStudy/Lib/site-packages/sacred" />
+    <SUITE FILE_PATH="coverage/Cyde_Cross_Guided$test.coverage" NAME="test Coverage Results" MODIFIED="1634025459645" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Cyde_Cross_Guided$fewshot.coverage" NAME="fewshot Coverage Results" MODIFIED="1634609873951" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/models" />
+    <SUITE FILE_PATH="coverage/Cycle_Cross_Guided$test_old.coverage" NAME="test_old Coverage Results" MODIFIED="1637490752616" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Cross_attention_fss$train.coverage" NAME="train Coverage Results" MODIFIED="1689293359316" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Cycle_Cross_Guided$vgg.coverage" NAME="vgg Coverage Results" MODIFIED="1634888200284" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/models" />
+    <SUITE FILE_PATH="coverage/Cycle_Cross_Guided$test.coverage" NAME="test Coverage Results" MODIFIED="1657934829610" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Cyde_Cross_Guided$resnet_50_101.coverage" NAME="resnet_50_101 Coverage Results" MODIFIED="1634006377564" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/models" />
+    <SUITE FILE_PATH="coverage/Cross_attention_fss$cross_attention.coverage" NAME="cross_attention Coverage Results" MODIFIED="1676444595236" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/models" />
+    <SUITE FILE_PATH="coverage/Cyde_Cross_Guided$train.coverage" NAME="train Coverage Results" MODIFIED="1634611525787" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Cycle_Cross_Guided$utils.coverage" NAME="utils Coverage Results" MODIFIED="1658044526728" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/util" />
+    <SUITE FILE_PATH="coverage/Cycle_Cross_Guided$segment_vgg.coverage" NAME="segment_vgg Coverage Results" MODIFIED="1634886855918" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/models" />
+    <SUITE FILE_PATH="coverage/Cycle_Cross_Guided$monitor_GPU.coverage" NAME="monitor_GPU Coverage Results" MODIFIED="1650272059445" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Cyde_Cross_Guided$pascal.coverage" NAME="pascal Coverage Results" MODIFIED="1634604570407" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dataloaders" />
+    <SUITE FILE_PATH="coverage/Cycle_Cross_Guided$merge.coverage" NAME="merge Coverage Results" MODIFIED="1670377823200" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/util" />
+    <SUITE FILE_PATH="coverage/Cycle_Cross_Guided$merge_mask_support.coverage" NAME="merge_mask_support Coverage Results" MODIFIED="1670377835182" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/util" />
+    <SUITE FILE_PATH="coverage/Cycle_Cross_Guided$fewshot.coverage" NAME="fewshot Coverage Results" MODIFIED="1655541929198" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/models" />
+    <SUITE FILE_PATH="coverage/Cycle_Cross_Guided$vit_model_3360dim.coverage" NAME="vit_model_3360dim Coverage Results" MODIFIED="1634694362762" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/models" />
+    <SUITE FILE_PATH="coverage/Cyde_Cross_Guided$transforms.coverage" NAME="transforms Coverage Results" MODIFIED="1634568208760" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dataloaders" />
+    <SUITE FILE_PATH="coverage/Cycle_Cross_Guided$Unittests_in_Cyc_test.coverage" NAME="Unittests in Cyc-test Coverage Results" MODIFIED="1638192486455" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Cyc-test" />
+  </component>
+</project>
