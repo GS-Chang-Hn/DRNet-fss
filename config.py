@@ -25,20 +25,20 @@ def cfg():
     input_size = (448, 448)
     seed = 1234
     cuda_visable = '0, 1, 2, 3, 4, 5, 6, 7'
-    gpu_id = 0
+    gpu_id = 3
     mode = 'train'  # 'train' or 'test'
     # mode = 'test'  # 'train' or 'test'
 
     if mode == 'train':
         dataset = 'VOC'  # 'VOC' or 'COCO'
-        n_steps = 100
+        n_steps = 60000
         label_sets = 0
         batch_size = 1
-        lr_milestones = [10000, 20000, 25000, 30000, 35000, 40000, 45000, 50000, 55000, 60000, 75000, 80000, 90000]
+        lr_milestones = [10000, 20000, 25000, 30000, 35000, 40000, 45000, 50000, 55000, 60000]
         align_loss_scaler = 1
         ignore_label = 255
-        print_interval = 10
-        save_pred_every = 100
+        print_interval = 1000
+        save_pred_every = 10000
 
         model = {
             'align': True,
@@ -60,7 +60,7 @@ def cfg():
         notrain = False
         snapshot = './results/Cross-attention-fss_VOC_align_sets_0_1way_1shot_[train]/1/snapshots/60000.pth'
         n_runs = 4
-        n_steps = 31
+        n_steps = 1000
         batch_size = 1
         scribble_dilation = 0
         bbox = False

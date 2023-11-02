@@ -127,11 +127,9 @@ def main(_run, _config, _log):
         sup_loss_false = criterion4(sup_output_background, support_labels)
         # loss = s_f_w * math.exp(c1_t * sup_loss_true) + s_b_w * math.exp(-c1_f * sup_loss_false) + q_f_w * math.exp(
         #     c1_t * query_loss_true) + q_b_w * math.exp(-c1_f * query_loss_false)
-        # loss = q_f_w * query_loss_true + s_f_w * sup_loss_true
+        loss = q_f_w * query_loss_true + s_f_w * sup_loss_true
         # loss = query_loss_true
         # uery_loss_true
-
-        loss = query_loss_true
         loss.backward()
         optimizer.step()
         scheduler.step()
