@@ -1,7 +1,22 @@
 # DRNet-fss
 This is the implementation of our paper DRNet: Disentanglement and Recombination Network for few-shot semantic segmentation that has been submitted to IEEE Transactions on Circuits and Systems for Video Technology (TCSVT).
 # Get Started
-Please download the following datasets:
+
+Python 3.6 +
+
+PyTorch 1.0.1
+
+torchvision 0.2.1
+
+NumPy, SciPy, PIL
+
+pycocotools
+
+sacred 0.7.5
+
+tqdm 4.32.2
+
+# Please download the following datasets: 
 
 PASCAL-5i is based on the PASCAL VOC 2012 and SBD where the val images should be excluded from the list of training samples.
 
