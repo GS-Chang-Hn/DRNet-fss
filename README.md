@@ -21,19 +21,31 @@ Many thanks to their greak work!
 If you find this project useful, please consider citing:
 
 @inproceedings{wang2019panet,
+
   title={Panet: Few-shot image semantic segmentation with prototype alignment},
+  
   author={Wang, Kaixin and Liew, Jun Hao and Zou, Yingtian and Zhou, Daquan and Feng, Jiashi},
+  
   booktitle={proceedings of the IEEE/CVF international conference on computer vision},
+  
   pages={9197--9206},
+  
   year={2019}
 }
 
 @article{chang2022mgnet,
+
   title={MGNet: Mutual-guidance network for few-shot semantic segmentation},
+  
   author={Chang, Zhaobin and Lu, Yonggang and Wang, Xiangwen and Ran, Xingcheng},
+  
   journal={Engineering Applications of Artificial Intelligence},
+  
   volume={116},
+  
   pages={105431},
+  
   year={2022},
+  
   publisher={Elsevier}
 }
