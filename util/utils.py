@@ -17,7 +17,7 @@ loader = transforms.Compose([
     transforms.ToTensor()
 ])
 
-# @GL query pred 覆盖
+
 def pred_query_cover(query_id, pred):
     # <_io.BufferedReader name='Z:\\czb\\COCO2014\\train2014\\train2014\\COCO_train2014_000000078000.jpg'>
     # query_path = r"Z:\czb\COCO2014\train2014\val2014\COCO_val2014_"+"0"*(12-len(query_id)) + query_id + ".jpg"
@@ -60,7 +60,7 @@ def pred_query_cover(query_id, pred):
     plt.imshow(pred.permute(1, 2, 0).cpu(), alpha=0.2)
     # plt.show()
     plt.savefig("./CCG_Test/" + query_id + "_merge.jpg", bbox_inches='tight', pad_inches=0)
-# @GL 可视化tensor @czb 去刻度和空白
+
 def generalized_imshow(arr, img_name):
     # print(arr.shape, img_name)
     # fig = plt.figure(frameon=False)
@@ -78,9 +78,6 @@ def generalized_imshow(arr, img_name):
         plt.imshow(arr, cmap="gray")
     plt.axis('off')
     plt.savefig("./CCG_Test/" + img_name + ".jpg", bbox_inches='tight', pad_inches=0)
-
-
-# @GL 可视化特征图
 def show_feature_map(feature_map):
     # print(feature_map.shape)
     # feature_map = feature_map.squeeze(0)
@@ -94,9 +91,6 @@ def show_feature_map(feature_map):
         plt.axis('off')
         imageio.imsave("./savefile/" + str(index) + ".png", feature_map[index - 1])
     plt.show()
-
-
-# @GL 计算余弦相似度
 def cosine_similarity(x, y):
     x = x.detach()
     y = y.detach()
