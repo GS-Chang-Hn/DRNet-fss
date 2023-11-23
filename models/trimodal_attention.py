@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 # -*- coding:utf-8 -*-
 # @Time    : 2021/1/22 01:30
-# @Author  : glan~
+# @Author  : z.chang
 # @FileName: trimodal_attention.py
-# @annotation: 模态融合注意力
+# @annotation: 融合注意力
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
@@ -41,9 +41,6 @@ def bi_modal_attention(x, y):
     a1 = torch.mul(o1, x)  # 相同位置上的元素对应各自相乘
 
     return a1
-
-
-# 多模态自注意力融合 #
 def multi_sa(video, tri_d, audio):
     vv_att = my_self_attention(video)
     tt_att = my_self_attention(tri_d)
@@ -51,8 +48,6 @@ def multi_sa(video, tri_d, audio):
 
     return torch.cat([aa_att, vv_att, tt_att, video, tri_d, audio], dim=1)
 
-
-# 多模态注意力融合 #
 def multi_at(video, tri_d, audio):
     vt_att = bi_modal_attention(video, tri_d)
     av_att = bi_modal_attention(audio, video)
