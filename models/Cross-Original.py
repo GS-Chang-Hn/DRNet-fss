@@ -79,7 +79,6 @@ class FewShotSeg(nn.Module):
         imgs_concat = torch.cat([torch.cat(way, dim=0) for way in supp_imgs]
                                 + [torch.cat(qry_imgs, dim=0), ], dim=0)
         img_fts_proj_out = self.encoder(imgs_concat)  # 2 1024 56 56
-        # @ 通过 1*1 1的卷积核  降维到1*512 VGG不需要
         # img_fts_proj_out = self.proj(img_fts_resnet_out)  # 2 512 56 56
         fts_size = img_fts_proj_out.shape[-2:]  # 最后输出的维度
         supp_fts_proj_out = img_fts_proj_out[:n_ways * n_shots * batch_size].view(
@@ -143,10 +142,7 @@ class FewShotSeg(nn.Module):
             "--------------------------------The background regions of support images end-------------------------------"
             fg_prototypes, bg_prototype = self.getPrototype(supp_fg_fts, supp_bg_fts)
 
-            """
-            训练阶段，将前景和背景的原型可视化（但是原型是1 512这种，是不是不可以），其实 原型是 1 512 1 1，最后两个是取得平均池化
-            """
-            foreground_prototypes = [bg_prototype, ] + fg_prototypes  # 组建一个list，存放前景和背景tensor，计算只是利用512的维度，56和14仅仅是大小
+            foreground_prototypes = [bg_prototype, ] + fg_prototypes  
             dist1 = [self.calDist(qry_fts_proj_out[:, epi], prototype) for prototype in foreground_prototypes]
             query_foreground_pred = torch.stack(dist1, dim=1)  #
             query_outputs_foreground.append(F.interpolate(query_foreground_pred, size=img_size, mode='bilinear'))
@@ -219,8 +215,6 @@ class FewShotSeg(nn.Module):
         sup_output_background = support_output_background.view(-1, *support_output_background.shape[2:])
 
         return que_output_foreground, que_output_background, sup_output_foreground, sup_output_background  # [1 2 448 448] [shot 2 448 448]
-
-    ###################@czb计算Query->Resnet/VGG->Feature与Support->Resnet/VGG->Vit->prototype之间的余弦相似度 #################
     # def self_attention(query, key, value, mask=None, dropout=None):
     #
     #     d_k = query.size(-1)
@@ -247,37 +241,7 @@ class FewShotSeg(nn.Module):
         dist = F.cosine_similarity(query_cnn_out, prototype[..., None, None], dim=1) * scaler
         return dist
 
-    # def getFeatures(self, fts, mask, is_vit):
-    #     """
-    #     Extract foreground and background features via masked average pooling
-    #     全卷积网络（FCN）能够保留输入图像的中每个像素相对位置；所以通过将二值 mask 与提取到的特征图相乘就可以完全保留目标的特征信息，
-    #     排除掉背景等无关类别的特征
-    #     Args:
-    #         fts: input features, expect shape: 1 x C x H' x W'
-    #         mask: binary mask, expect shape: 1 x H x W
-    #     """
-    #     fts = F.interpolate(fts, size=mask.shape[-2:],
-    #                         mode='bilinear')  # 默认nearest, linear(3D-only), bilinear(4D-only), trilinear(5D-only)
-    #     # @czb
-    #     if is_vit:
-    #         masked_fts = torch.sum(fts, dim=(2, 3)) \
-    #                      / (mask[None, ...].sum(dim=(2, 3)) + 1e-5)  # 1 x C
-    #     else:
-    #         masked_fts = fts * mask[None, ...]
-    #     # masked_fts = torch.sum(fts * mask[None, ...], dim=(2, 3)) \
-    #     #                  / (mask[None, ...].sum(dim=(2, 3)) + 1e-5)  # 1 x C
-    #     result1 = np.array(masked_fts.cpu())
-    #     return masked_fts
-    #  @GL  常规getFeatures
     def getFeatures(self, fts, mask):
-        """
-        Extract foreground and background features via masked average pooling
-        全卷积网络（FCN）能够保留输入图像的中每个像素相对位置；所以通过将二值 mask 与提取到的特征图相乘就可以完全保留目标的特征信息，
-        排除掉背景等无关类别的特征
-        Args:
-            fts: input features, expect shape: 1 x C x H' x W' [1 512 448 448]
-            mask: binary mask, expect shape: 1 x H x W
-        """
         fts = F.interpolate(fts, size=mask.shape[-2:],
                             mode='bilinear')  # 默认nearest, linear(3D-only), bilinear(4D-only), trilinear(5D-only)
 
@@ -286,9 +250,6 @@ class FewShotSeg(nn.Module):
 
     #  @GL 针对vit前后 进行mask 以及sum
     def handle_vit(self, fts, mask):
-        """
-            对vit输出求均值
-        """
         # fts = F.interpolate(fts, size=mask.shape[-2:],
         #                     mode='bilinear')  # 默认nearest, linear(3D-only), bilinear(4D-only), trilinear(5D-only)
         # if is_fore_vit:  # 送入vit前mask
@@ -302,15 +263,6 @@ class FewShotSeg(nn.Module):
 
     # @czb ################通过平均前景和背景特征获得原型###############
     def getPrototype(self, fg_fts, bg_fts):  # param: 1*512*56*56,  1*512*14*14
-        """
-        Average the features to obtain the prototype，单一原型无法完全准确表示（类似于聚类，通过聚类不同的类可以达到同样的效果），提升多原型（multi-prototype）
-
-        Args:
-            fg_fts: lists of list of foreground features for each way/shot
-                expect shape: Wa x Sh x [1 x C]
-            bg_fts: lists of list of background features for each way/shot
-                expect shape: Wa x Sh x [1 x C]
-        """
         n_ways, n_shots = len(fg_fts), len(fg_fts[0])  # 1， 5
         fg_prototypes = [sum(way) / n_shots for way in fg_fts]
         bg_prototype = sum([sum(way) / n_shots for way in bg_fts]) / n_ways
