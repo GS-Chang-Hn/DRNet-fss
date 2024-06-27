@@ -1,5 +1,5 @@
 # DRNet-fss
-This is the implementation of our paper DRNet: Disentanglement and Recombination Network for few-shot semantic segmentation that has been submitted to IEEE Transactions on Circuits and Systems for Video Technology (TCSVT).
+This is the implementation of our paper, DRNet: Disentanglement and Recombination Network for Few-Shot Semantic Segmentation, which has been accepted by IEEE Transactions on Circuits and Systems for Video Technology (IEEE TCSVT).
 # Get Started
 ```
 Python 3.7 +
