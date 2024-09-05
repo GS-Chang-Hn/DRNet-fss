@@ -19,10 +19,10 @@ OSLSM: https://github.com/lzzcd001/OSLSM
 PANet: https://github.com/kaixin96/PANet
 Many thanks to their greak work!
 ```
-
-# Citation
-If you find this project useful, please consider citing:
-```
+## Citation
+This code is based on the [PANet (2019 ICCV)].
+If you find this repository useful for your research, please consider citing the following paper(s):
+```bibtex
 @inproceedings{wang2019panet,
 
   title={Panet: Few-shot image semantic segmentation with prototype alignment},
@@ -51,5 +51,5 @@ If you find this project useful, please consider citing:
   year={2022},
   
   publisher={Elsevier}
-}
 ```
+For any enquiries, please contact the main authors.
